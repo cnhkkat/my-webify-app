@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fea52b06.css",
+    "main.js": "/static/js/main.0712766f.js",
+    "static/media/FiraCode-Regular.ttf": "/static/media/FiraCode-Regular.8b606aa922421b9c669e.ttf",
+    "static/media/bg0.webp": "/static/media/bg0.30c8b4d9f52b1a1caa36.webp",
+    "static/media/bg2.webp": "/static/media/bg2.b1d0690f17f7ab567d6e.webp",
+    "static/media/bg1.webp": "/static/media/bg1.47ad3fbaaf4258f0c82c.webp",
+    "index.html": "/index.html",
+    "main.fea52b06.css.map": "/static/css/main.fea52b06.css.map",
+    "main.0712766f.js.map": "/static/js/main.0712766f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fea52b06.css",
+    "static/js/main.0712766f.js"
+  ]
+}

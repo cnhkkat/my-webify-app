@@ -6,18 +6,18 @@ import { selectNavShow,setNavShow } from '../../store/navSlice';
 import s from './index.scss';
 
 import {
-  BgColorsOutlined,
-  CheckOutlined,
+  // BgColorsOutlined,
+  // CheckOutlined,
   HomeOutlined,
-  MenuOutlined,
-  SettingOutlined
+  // MenuOutlined,
+  // SettingOutlined
 } from '@ant-design/icons';
 
 import {
   useEventListener,
-  useLocalStorageState,
-  useSafeState,
-  useUpdateEffect
+  // useLocalStorageState,
+  // useSafeState,
+  // useUpdateEffect
 } from 'ahooks';
 import { Drawer } from 'antd';
 
