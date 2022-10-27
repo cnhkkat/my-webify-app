@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config ./scripts/config/webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config ./scripts/config/webpack.prod.js",
+    "build": "CI=false&&react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
