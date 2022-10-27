@@ -1,4 +1,4 @@
-export const env = 'my-blog-react-8gmsxw51152f0a6b'
+export const env = 'my-webify-app-6gb155vqabd4c410'
 export const siteTitle = 'Ra薯小站';
 export const pageDesc = '人世间悲喜烂剧，昼夜轮播不停'
 // 透明头像
