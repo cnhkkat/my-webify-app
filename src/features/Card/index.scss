@@ -7,8 +7,8 @@
   overflow: hidden;
   user-select: none;
   background-color: $themeColor;
-  color: $textColor;
-  padding: 10px 0 0 10px;
+  color: $textColorBlack;
+  padding: 10px;
   @extend .trans;
 }
 

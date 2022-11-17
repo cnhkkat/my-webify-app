@@ -1,11 +1,6 @@
-import React, { lazy, Suspense } from 'react';
-import { Navigate, Route, Routes } from 'react-router-dom';
-
-import ErrorBoundary from '../ErrorBoundary';
+import React from 'react';
 
 import s from './index.scss'
-
-const Home = lazy(()=> import(/* webpackPrefetch:true */ '../../pages/home'))
 
 const Main: React.FC = () => {
   return (

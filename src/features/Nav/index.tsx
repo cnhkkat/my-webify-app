@@ -1,14 +1,16 @@
 import './index.custom.scss'
 import React from 'react';
 import classNames from 'classnames';
-import { useAppSelector, useAppDispatch } from '../../app/hooks';
-import { selectNavShow,setNavShow } from '../../store/navSlice';
+import { useAppSelector, useAppDispatch } from '@/app/hooks';
+import { backTopReducer } from '@/store/backTopSlice';
+import {blogAdminUrl} from '@/utils/constants'
 import s from './index.scss';
 
 import {
   // BgColorsOutlined,
   // CheckOutlined,
   HomeOutlined,
+  SettingOutlined,
   // MenuOutlined,
   // SettingOutlined
 } from '@ant-design/icons';
@@ -25,36 +27,31 @@ import { NavLink, useNavigate } from 'react-router-dom';
 import { linkList } from './linkList';
 
 const Nav = ()=>{
-
-  const navShow = useAppSelector(selectNavShow);
-  
-  const dispatch = useAppDispatch();
-
   const { navArr, secondNavArr } = linkList();
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
+  const backToTop = useAppSelector(state => state.backTop.value)
+  const dispatch = useAppDispatch()
 
   useEventListener(
     'mousewheel',
     event => {
       event = event || window.event;
-      dispatch(setNavShow!(event.wheelDeltaY > 0))
+      dispatch(backTopReducer!(event.wheelDeltaY > 0))
+      
     },
     { target: document.body }
   );
 
   return (
     <>
-      <nav className={classNames(s.nav, { [s.hiddenNav]: !navShow })}>
+      <div className={classNames(s.nav, {[s.hiddenNav]: !backToTop})}>
         <div className={s.navContent}>
           {/* 主页 */}
           <div className={s.homeBtn} onClick={() => navigate('/')}>
             <HomeOutlined />
           </div>
 
-          {/* 后台管理 */}
-          {/* <a className={s.adminBtn} href={blogAdminUrl} target='_blank' rel='noreferrer'>
-            <SettingOutlined />
-          </a> */}
+
 
           {/* 黑暗模式切换 */}
           {/* <div className={s.modeBtn}>
@@ -72,37 +69,44 @@ const Nav = ()=>{
               ))}
             </div>
           </div> */}
+          <div className={s.centerBtn}>
 
-          {/* 文章单独按钮 */}
-          <div className={s.articlesBtn}>
-            <div className={s.articelsSecond}>
-              {secondNavArr.map((item, index) => (
-                <NavLink
-                  className={({ isActive }) =>
-                    isActive ? s.sedActive : s.articelsSecondItem
-                  }
-                  to={item.to}
-                  key={index}
-                >
-                  {item.name}
-                </NavLink>
-              ))}
+            {/* 文章单独按钮 */}
+            <div className={s.articlesBtn}>
+              <div className={s.articelsSecond}>
+                {secondNavArr.map((item, index) => (
+                  <NavLink
+                    className={({ isActive }) =>
+                      isActive ? s.sedActive : s.articelsSecondItem
+                    }
+                    to={item.to}
+                    key={index}
+                  >
+                    {item.name}
+                  </NavLink>
+                ))}
+              </div>
+              博客
             </div>
-            文章
-          </div>
 
-          {/* 其他按钮 */}
-          {navArr.map((item, index) => (
-            <NavLink
-              className={({ isActive }) => (isActive ? s.navActive : s.navBtn)}
-              to={item.to}
-              key={index}
-            >
-              {item.name}
-            </NavLink>
-          ))}
+            {/* 其他按钮 */}
+            {navArr.map((item, index) => (
+              <NavLink
+                className={({ isActive }) => (isActive ? s.navActive : s.navBtn)}
+                to={item.to}
+                key={index}
+              >
+                {item.name}
+              </NavLink>
+            ))}
+          </div>
+                            {/* 后台管理 */}
+          <a className={s.adminBtn} href={blogAdminUrl} target='_blank' rel='noreferrer'>
+            <SettingOutlined />
+          </a>
         </div>
-      </nav>
+
+      </div>
     </>
   )
 }

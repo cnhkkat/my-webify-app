@@ -4,14 +4,14 @@ import { Provider } from 'react-redux';
 import store  from './store/store';
 import App from './App';
 
-import { LazyImportComponent } from './pages/lazy-import-component';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import ErrorPage from './pages/home/error-page';
+import ErrorPage from './pages/Home/error-page';
 
-const Home = React.lazy(() => import('./pages/home'))
+const Home = React.lazy(()=>import('./pages/Home'))
+const Say = React.lazy(()=>import('./pages/Say'))
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
@@ -24,7 +24,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <LazyImportComponent lazyChildren={Home} />,
+        element:<Home />
+      },
+      {
+        path: "/say",
+        element:<Say />
       },
     ],
   },

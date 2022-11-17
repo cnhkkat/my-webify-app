@@ -2,10 +2,10 @@ export const linkList = () => {
   const navArr = [
     // { name: '图库', to: '/gallery' },
     { name: '说说', to: '/say' },
-    { name: '留言', to: '/msg' },
+    { name: '评论', to: '/msg' },
     { name: '友链', to: '/link' },
     { name: '项目', to: '/show' },
-    { name: '日志', to: '/log' },
+    { name: '碎片', to: '/log' },
     { name: '关于', to: '/about' }
   ];
   const secondNavArr = [
@@ -21,10 +21,10 @@ export const linkList = () => {
     { name: '标签', to: '/tags' },
     // { name: '图库', to: '/gallery' },
     { name: '说说', to: '/say' },
-    { name: '留言', to: '/msg' },
+    { name: '评论', to: '/msg' },
     { name: '友链', to: '/link' },
     { name: '项目', to: '/show' },
-    { name: '日志', to: '/log' },
+    { name: '碎片', to: '/log' },
     { name: '关于', to: '/about' }
   ];
 

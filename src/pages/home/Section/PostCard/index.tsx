@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import React, { MouseEventHandler } from 'react';
 
-import Card from '../../../../features/Card';
+import Card from '@/features/Card';
 
 import s from './index.scss';
 import PostCardLoading from './PostCardLoading';

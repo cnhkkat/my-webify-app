@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit'
-import navReducer from './navSlice'
+import backTopReducer from './backTopSlice'
 import artSumReducer from './artSumSlice'
 const store = configureStore({
   reducer: {
-    nav: navReducer,
+    backTop: backTopReducer,
     artSum: artSumReducer
   }
 })

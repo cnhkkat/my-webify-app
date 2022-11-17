@@ -7,7 +7,7 @@ interface Props {
   title?: string;
   desc?: string;
   className?: string;
-  children?:[]
+  children?:any
 }
 
 const PageTitle: React.FC<Props> = ({ title, desc, className,children }) => {

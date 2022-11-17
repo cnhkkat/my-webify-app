@@ -4,16 +4,15 @@
 .baseBtn {
   height: 44px;
   width: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  line-height: 44px;
+  text-align: center;
   font-size: 22px;
-  font-weight: 700;
-  margin-right: 20px;
-  border-radius: 14px;
-  color: $textColor;
+  // font-weight: 700;
+  // margin-right: 20px;
+  border-radius: 20px;
+  color: $textColorBlack;
   user-select: none;
-  @extend .hover;
+  @extend .hover-color;
 }
 
 .hiddenNav {
@@ -24,6 +23,7 @@
 .nav {
   width: 100%;
   height: $navHeight;
+  padding: 10px;
   background-color: $themeColor1;
   position: fixed;
   top: 0;
@@ -32,12 +32,13 @@
   @extend .trans;
 
   .navContent {
-    position: relative;
-    width: $centerWidth;
+    // position: relative;
+    // width: $centerWidth;
     height: 100%;
-    margin: 0 auto;
+    // margin: 0 auto;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     .homeAndAdmin {
@@ -51,22 +52,33 @@
     }
 
     .homeBtn {
-      @extend .homeAndAdmin;
-      cursor: pointer;
-      left: 0;
+      // @extend .homeAndAdmin;
+      // cursor: pointer;
+      // left: 0;
+      @extend .baseBtn;
+      // flex: 0 1 200px;
     }
 
     .adminBtn {
-      @extend .homeAndAdmin;
-      margin-right: 0;
-    }
+      // @extend .homeAndAdmin;
+      // margin-right: 0;
+      @extend .baseBtn;
 
+      // width: 120px;
+      // flex: 0 1 200px;
+    }
+    .centerBtn {
+      flex: 0 1 500px;
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+    }
     .navBtn {
       @extend .baseBtn;
     }
-    .navBtn:last-child {
-      margin-right: 0;
-    }
+    // .navBtn:last-child {
+    //   margin-right: 0;
+    // }
     .navActive {
       @extend .navBtn;
       background-color: $hoverColor;
@@ -97,7 +109,7 @@
           border-radius: 10px;
           user-select: none;
           background-color: $themeColor2;
-          color: $textColor;
+          color: $textColorBlack;
         }
         .articelsSecondItem:last-child {
           margin-bottom: 0;
@@ -169,7 +181,7 @@
   justify-content: center;
   align-items: center;
   font-size: 22rem;
-  color: $textColor;
+  color: $textColorBlack;
   position: fixed;
   top: 0;
   right: 0;
@@ -183,7 +195,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: $textColor;
+    color: $textColorBlack;
     font-size: 18rem;
     font-family: 'dengxian';
     width: 60rem;

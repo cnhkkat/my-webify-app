@@ -2,14 +2,15 @@ import { useRequest, useSafeState } from 'ahooks';
 import React from 'react';
 
 import { useNavigate } from 'react-router-dom';
-import { DB } from '../../../utils/api/dbConfig';
-import { getPageData } from '../../../utils/api/getPageData';
-import { homeSize,staleTime } from '../../../utils/constants';
+
+import MyPagination from '@/features/MyPagination';
+import { DB } from '@/utils/api/dbConfig';
+import { getPageData } from '@/utils/api/getPageData';
+import { homeSize, staleTime } from '@/utils/constants';
+
+import { useAppSelector } from '@/app/hooks';
 import s from './index.scss';
-import PostCard from './PostCard/index';
-import MyPagination from '../../../features/MyPagination/index';
-import {selectArtSum} from '../../../store/artSumSlice';
-import { useAppSelector } from '../../../app/hooks';
+import PostCard from './PostCard';
 
 interface theAtc {
   classes: string;
@@ -26,8 +27,9 @@ interface theAtc {
 
 const Section: React.FC = () => {
   const navigate = useNavigate();
+  const artSum = useAppSelector(state => state.artSum.value)
   const [page, setPage] = useSafeState(1);
-  const artSum = useAppSelector(selectArtSum);
+
   const { data, loading } = useRequest(
     () =>
       getPageData({
@@ -45,7 +47,7 @@ const Section: React.FC = () => {
     }
   );
 
- return (
+  return (
     <section className={s.section}>
       {data?.data.map(({ _id, title, content, date, tags, titleEng }: theAtc) => (
         <PostCard
@@ -61,13 +63,13 @@ const Section: React.FC = () => {
       <MyPagination
         current={page}
         defaultPageSize={homeSize}
-        total={artSum.artSum}
+        total={artSum}
         setPage={setPage}
         autoScroll={true}
         scrollToTop={document.body.clientHeight - 80}
       />
     </section>
   );
-}
+};
 
-export default Section
+export default Section;

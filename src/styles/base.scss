@@ -17,16 +17,17 @@ $space: 20px;
 // 不变的颜色
 $codeOther: #c9d1d9;
 // 按钮/字体高亮/hover
-$hoverColor: var(--hoverColor, #006064);
+$hoverColor: var(--hoverColor, #21b3f6);
 
 // 主色
-$themeColor: var(--themeColor, #ffab40);
+$themeColor: var(--themeColor, #f5f5f5);
 // 副色1
-$themeColor1: var(--themeColor1, #ff8a00);
+$themeColor1: var(--themeColor1, #04883f);
 // 副色2
 $themeColor2: var(--themeColor2, #26a69a);
 // 字体色
-$textColor: var(--textColor, rgb(255, 255, 255));
+$textColor: var(--textColorBlack, rgb(255, 255, 255));
+$textColorBlack: var(--textColorWhite, rgb(1, 1, 1));
 // 切换开关灰色
 $switchOff: var(--switchOff, rgb(77, 77, 77));
 // placeholder

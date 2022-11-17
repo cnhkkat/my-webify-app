@@ -4,15 +4,9 @@
 
 .body {
   display: flex;
+  padding: 0 40px;
 }
-.error {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-}
+
 @media screen and (max-width: 1240px) {
   .homeTitle {
     height: 50vh;
