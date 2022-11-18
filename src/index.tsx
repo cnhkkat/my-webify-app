@@ -9,7 +9,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ErrorPage from './pages/Home/error-page';
-
+import { LazyImportComponent } from './pages/lazy-import-component';
 const Home = React.lazy(()=>import('./pages/Home'))
 const Say = React.lazy(()=>import('./pages/Say'))
 
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element:<Home />
+        element: <LazyImportComponent lazyChildren={Home}  />
       },
       {
         path: "/say",
