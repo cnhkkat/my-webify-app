@@ -1,10 +1,18 @@
 import { configureStore } from '@reduxjs/toolkit'
 import backTopReducer from './backTopSlice'
 import artSumReducer from './artSumSlice'
+import nameReducer  from './nameSlice'
+import linkReducer from './linkSlice'
+import avatarReducer from './avatarSlice'
+import emailReducer from './emailSlice'
 const store = configureStore({
   reducer: {
     backTop: backTopReducer,
-    artSum: artSumReducer
+    artSum: artSumReducer,
+    name:nameReducer,
+    link:linkReducer,
+    avatar:avatarReducer,
+    email:emailReducer
   }
 })
 

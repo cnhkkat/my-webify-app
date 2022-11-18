@@ -26,3 +26,29 @@ export const count_id = 'eee691ac6375f1ee00862be41f48d9fd'
 export const blogAdminUrl = 'https://my-blog-react-8gmsxw51152f0a6b-1313448776.tcloudbaseapp.com/'
 
 export const adminUid = 'd048886911ab4f94b4c127ee4f60d726'
+
+
+// 默认头像集合（若用户没获取QQ头像，则随机显示此数组中的头像）
+export const defaultCommentAvatarArr = [
+  'https://cdn.staticaly.com/gh/cnhkkat/images-store@master/words-pk/a10.jpg',
+  'https://cdn.staticaly.com/gh/cnhkkat/images-store@master/words-pk/a2.jpg',
+  'https://cdn.staticaly.com/gh/cnhkkat/images-store@master/words-pk/a6.jpg',
+  'https://cdn.staticaly.com/gh/cnhkkat/images-store@master/words-pk/a5.jpg',
+  'https://cdn.staticaly.com/gh/cnhkkat/images-store@master/words-pk/nn.jpg',
+  'https://cdn.staticaly.com/gh/cnhkkat/images-store@master/words-pk/a9.jpg',
+  'https://cdn.staticaly.com/gh/cnhkkat/images-store@master/words-pk/a1.jpg',
+];
+
+export const avatarArrLen = defaultCommentAvatarArr.length;
+
+export const emailApi ='http://43.139.153.3:8000/'
+
+export const myAvatar = 'https://cdn.staticaly.com/gh/cnhkkat/images-store@master/jgy.webp';
+export const myDescr = '人世间悲喜烂剧，昼夜轮播不停';
+export const myName = 'rashu99';
+export const myLink = 'my-webify-app-6gb155vqabd4c410-1313448776.tcloudbaseapp.com';
+export const myEmail = '1071541105@qq.com';
+export const QQ = '1071541105';
+
+// loading
+export const smallLoadingUrl = 'https://img.lzxjack.top/img/202203302022741.webp';

@@ -12,6 +12,7 @@ import ErrorPage from './pages/Home/error-page';
 import { LazyImportComponent } from './pages/lazy-import-component';
 const Home = React.lazy(()=>import('./pages/Home'))
 const Say = React.lazy(()=>import('./pages/Say'))
+const Msg = React.lazy(()=>import('./pages/Msg'))
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/say",
         element:<Say />
+      },
+      {
+        path: "/msg",
+        element:<Msg />
       },
     ],
   },
