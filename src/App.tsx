@@ -4,6 +4,7 @@ import Nav from './features/Nav'
 import s from './App.scss';
 import classNames from 'classnames';
 import { Outlet } from "react-router-dom";
+import Footer from './features/Footer';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
    <div className={classNames(s.AppBox, bgClasses[0])}>
     <Nav />
     <Outlet />
+    <Footer />
    </div>
   )
 }

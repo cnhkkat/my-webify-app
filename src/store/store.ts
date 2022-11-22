@@ -5,6 +5,7 @@ import nameReducer  from './nameSlice'
 import linkReducer from './linkSlice'
 import avatarReducer from './avatarSlice'
 import emailReducer from './emailSlice'
+import modeReducer from './modeSlice'
 const store = configureStore({
   reducer: {
     backTop: backTopReducer,
@@ -12,7 +13,8 @@ const store = configureStore({
     name:nameReducer,
     link:linkReducer,
     avatar:avatarReducer,
-    email:emailReducer
+    email:emailReducer,
+    mode:modeReducer
   }
 })
 

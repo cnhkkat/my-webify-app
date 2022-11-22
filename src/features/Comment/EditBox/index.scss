@@ -34,7 +34,7 @@
         height: 70px;
         border-radius: 14px;
         overflow: hidden;
-        background-color: $themeColor1;
+        border: 2px solid $borderColor;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -63,7 +63,7 @@
           justify-content: space-between;
           border-radius: 14px;
           overflow: hidden;
-          background-color: $themeColor1;
+          border: 2px solid $borderColor;
 
           .inputKey {
             width: 56px;
@@ -94,7 +94,7 @@
         height: 140px;
         padding: 8px 16px;
         border-radius: 14px;
-        background-color: $themeColor1;
+        border: 2px solid $borderColor;
 
         .textarea {
           font-size: 18px;

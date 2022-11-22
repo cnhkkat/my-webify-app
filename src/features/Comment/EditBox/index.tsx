@@ -36,10 +36,10 @@ import AdminBox from './AdminBox';
 import Emoji from './Emoji';
 import s from './index.scss';
 import PreShow from './PreShow';
-import {nameReducer} from '@/store/nameSlice'
-import  {avatarReducer} from '@/store/avatarSlice'
+import { nameReducer } from '@/store/nameSlice'
+import  { avatarReducer } from '@/store/avatarSlice'
 import  { linkReducer } from '@/store/linkSlice'
-import  {emailReducer} from '@/store/emailSlice'
+import  { emailReducer } from '@/store/emailSlice'
 
 interface Props {
   msgRun?: Function;
@@ -168,6 +168,9 @@ const EditBox: React.FC<Props> = ({
   });
 
   const adminLogined = useMemoizedFn(() => {
+    // auth.signInWithEmailAndPassword('1071541105@qq.com','aa098765').then(res=>console.log(res)
+    // )
+    // console.log(auth.currentUser?.uid);
     if (!auth.hasLoginState()) return false;
     if (auth.currentUser?.uid === adminUid) return true;
     return false;
@@ -354,7 +357,7 @@ const EditBox: React.FC<Props> = ({
               className={s.textarea}
               value={text}
               onChange={e => setText(e.target.value)}
-              placeholder='写点什么吗？支持markdown格式！&#10;可以在「昵称」处填写QQ号，自动获取「头像」和「QQ邮箱」！'
+              placeholder='支持markdown格式！&#10;可以在「昵称」处填写QQ号，自动获取「头像」和「QQ邮箱」！'
             />
           </div>
           <div className={s.commentBtns}>

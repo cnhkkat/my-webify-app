@@ -1,6 +1,6 @@
 // export const env = 'my-webify-app-6gb155vqabd4c410'
 export const env = 'my-blog-react-8gmsxw51152f0a6b'
-export const siteTitle = '欢↘迎↗光→临↘我的博客';
+export const siteTitle = 'kkat📒blog';
 export const pageDesc = 'react v18 + router v6 + redux + ts + ahooks'
 // 透明头像
 export const welcomeCardAvatar = 'https://cdn.staticaly.com/gh/cnhkkat/images-store@master/transparent-avatar.webp'
@@ -41,7 +41,7 @@ export const defaultCommentAvatarArr = [
 
 export const avatarArrLen = defaultCommentAvatarArr.length;
 
-export const emailApi ='http://43.139.153.3:8000/'
+export const emailApi ='http://43.139.153.3:8000/email'
 
 export const myAvatar = 'https://cdn.staticaly.com/gh/cnhkkat/images-store@master/jgy.webp';
 export const myDescr = '人世间悲喜烂剧，昼夜轮播不停';

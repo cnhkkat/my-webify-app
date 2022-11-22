@@ -10,7 +10,7 @@
   h5 {
     margin-top: 0;
     margin-bottom: 15px;
-    color: $textColor;
+    color: $textColorBlack;
     font-weight: 700;
   }
   h5 {
@@ -26,16 +26,16 @@
     font-size: 28px;
   }
   h2:before {
-    content: '✒️';
+    content: '⭐️ ';
   }
   h3:before {
-    content: '✏️';
+    content: '✏️ ';
   }
   h4:before {
-    content: '📌';
+    content: '📌 ';
   }
   h5:before {
-    content: '🏷️';
+    content: '🏷️ ';
   }
 
   p {
@@ -61,7 +61,7 @@
   }
 
   blockquote {
-    background-color: $themeColor1;
+    // background-color: $themeColor2;
     padding: 14px 40px;
     font-size: 18px;
     border-radius: 20px;

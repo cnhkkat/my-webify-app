@@ -13,11 +13,10 @@ const MsgInfo: React.FC = () => {
     <>
       <div className={s.info}>
         <div>
-          {timeText}，我叫<span className={s.hoverName}>飞鸟</span>，
+          {timeText} 我是<span className={s.hoverName}>kkat</span>
         </div>
-        <div>欢迎来到我的博客!</div>
-        <div>可以在这里留言、吐槽，</div>
-        <div className={s.hoverName}>交换友链。</div>
+        <div>欢迎来到我的博客🤩</div>
+        <div className={s.hoverName}>快来交换友链 🥳~</div>
       </div>
       <div className={s.siteLink}>
         <div className={s.link}>本站链接：</div>

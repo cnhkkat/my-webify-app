@@ -37,7 +37,7 @@ const Layout: React.FC<Props> = ({
     <>
       <PageTitle title={title} className={classNames({ [s.postTitle]: isPost })}>
         {isPost && (
-          <div>
+          <div className={s.classanddate}>
             <span className={s.articleClass}>{classes}</span>
             <span className={s.articleDate}>
               {dayjs(date).format('YYYY-MM-DD HH:mm:ss')}

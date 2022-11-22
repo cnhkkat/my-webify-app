@@ -83,11 +83,11 @@ $avatarWidth: 70px;
           display: inline-block;
           height: 22px;
           line-height: 24px;
-          background-color: rgb(97, 147, 187);
           font-size: 14px;
           padding: 0 4px;
           border-radius: 8px;
-          color: rgb(231, 231, 231);
+          color: $themeColor;
+          background-color: $themeColor1;
         }
         .date {
           margin-left: 10px;
@@ -96,7 +96,7 @@ $avatarWidth: 70px;
       }
 
       .content {
-        background-color: $themeColor1;
+        border: 1px solid $textColorBlack;
         padding: 10px 16px;
         border-radius: 12px;
         font-size: 18px;

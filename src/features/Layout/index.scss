@@ -9,7 +9,7 @@
   margin-right: $space;
   border-radius: 14px;
   user-select: none;
-  background-color: $themeColor;
+  background-color: $themeColor1;
   @extend .hover;
 }
 
@@ -17,6 +17,11 @@
   align-items: flex-start;
   user-select: text;
 
+  .classanddate {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
   .articleClass {
     @extend .articleInfo;
   }
