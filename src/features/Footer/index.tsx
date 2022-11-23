@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { source_github } from '@/utils/constants';
+import {icp_site,icp_no, source_github } from '@/utils/constants';
 
 import s from './index.scss';
 
@@ -23,10 +23,9 @@ const Footer: React.FC = () => {
         </a>
       </span>
       <span>
-        {/* <a href={icp_site} target='_blank' rel='noreferrer' className={s.text}>
+        <a href={icp_site} target='_blank' rel='noreferrer' className={s.text}>
           {icp_no}
-        </a> */}
-        闽ICP备...还在申请中🤗
+        </a>
       </span>
       {/* <span>
         {frameArr.map((item, index) => (
