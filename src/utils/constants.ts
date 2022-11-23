@@ -1,4 +1,3 @@
-// export const env = 'my-webify-app-6gb155vqabd4c410'
 export const env = 'my-blog-react-8gmsxw51152f0a6b'
 export const siteTitle = 'kkat📒blog';
 export const pageDesc = 'react v18 + router v6 + redux + ts + ahooks'
@@ -46,7 +45,7 @@ export const emailApi ='http://43.139.153.3:8000/email'
 export const myAvatar = 'https://cdn.staticaly.com/gh/cnhkkat/images-store@master/jgy.webp';
 export const myDescr = '人世间悲喜烂剧，昼夜轮播不停';
 export const myName = 'rashu99';
-export const myLink = 'my-webify-app-6gb155vqabd4c410-1313448776.tcloudbaseapp.com';
+export const myLink = 'https://rashu99.top/';
 export const myEmail = '1071541105@qq.com';
 export const QQ = '1071541105';
 export const source_github = 'https://github.com/cnhkkat/my-webify-app.git';
