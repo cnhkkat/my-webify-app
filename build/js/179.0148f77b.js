@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_app=self.webpackChunkreact_app||[]).push([[179],{84179:function(t,e,n){var u=n(67294),c=n(45210),o=n(52982),r={restoreOnUnmount:!1};e.Z=function(t,e){void 0===e&&(e=r);var n=(0,u.useRef)(o.Z?document.title:"");(0,u.useEffect)((function(){document.title=t}),[t]),(0,c.Z)((function(){e.restoreOnUnmount&&(document.title=n.current)}))}}}]);

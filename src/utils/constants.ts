@@ -49,6 +49,6 @@ export const myName = 'rashu99';
 export const myLink = 'my-webify-app-6gb155vqabd4c410-1313448776.tcloudbaseapp.com';
 export const myEmail = '1071541105@qq.com';
 export const QQ = '1071541105';
-
+export const source_github = 'https://github.com/cnhkkat/my-webify-app.git';
 // loading
 export const smallLoadingUrl = 'https://img.lzxjack.top/img/202203302022741.webp';

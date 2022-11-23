@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_app=self.webpackChunkreact_app||[]).push([[771],{42771:function(a,e,s){var n;s.d(e,{D:function(){return n}}),function(a){a.Articles="所有笔记",a.Classes="分类",a.Tags="标签",a.Gallery="我的图库",a.Say="想法疑问",a.Msg="评论区",a.Link="友情链接",a.Show="项目",a.Log="碎片日记",a.About="关于"}(n||(n={}))}}]);

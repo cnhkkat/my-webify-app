@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_app=self.webpackChunkreact_app||[]).push([[744],{71744:function(e,n,t){t.d(n,{F:function(){return r}});var c=t(47189),r=function(e){var n=e.dbName,t=e.sortKey,r=void 0===t?"_id":t,u=e.isAsc,a=void 0!==u&&u;return c.db.collection(n).orderBy(r,a?"asc":"desc").get().then((function(e){return e})).catch((function(e){return e}))}}}]);

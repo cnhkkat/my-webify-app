@@ -46,9 +46,12 @@
     color: $hoverColor;
   }
   code {
-    background-color: $inlineCode;
+    // background-color: $inlineCode;
+    color: red;
+    background-color: #eeeeee;
+    padding: 0 4px;
     font-family: 'dengxian';
-    padding: 3px 8px;
+    // padding: 3px 8px;
     border-radius: 8px;
     margin: 0 2px;
   }
