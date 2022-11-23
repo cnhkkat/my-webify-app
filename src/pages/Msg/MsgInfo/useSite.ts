@@ -15,7 +15,7 @@ export const useSite = () => {
       value: myAvatar
     },
     {
-      key: 'descr',
+      key: 'desc',
       value: myDescr
     }
   ];

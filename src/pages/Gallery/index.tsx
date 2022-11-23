@@ -14,7 +14,7 @@ interface GalleryType {
   _id: string;
   cover: string;
   title: string;
-  descr: string;
+  desc: string;
 }
 
 const Gallery: React.FC = () => {
@@ -32,7 +32,7 @@ const Gallery: React.FC = () => {
           key={item._id}
           cover={item.cover}
           title={item.title}
-          descr={item.descr}
+          desc={item.desc}
         />
       ))}
     </Layout>

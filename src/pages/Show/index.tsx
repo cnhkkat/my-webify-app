@@ -15,7 +15,7 @@ interface ShowType {
   cover: string;
   link: string;
   name: string;
-  descr: string;
+  desc: string;
 }
 
 const Show: React.FC = () => {
@@ -40,7 +40,7 @@ const Show: React.FC = () => {
           cover={item.cover}
           link={item.link}
           name={item.name}
-          descr={item.descr}
+          desc={item.desc}
         />
       ))}
     </Layout>
